@@ -1,0 +1,23 @@
+body{
+  margin: 0 3rem;
+}
+
+.blog-section{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  margin-top: 6rem;
+}
+.article-image{
+  width: 50rem;
+  height: 30rem;
+}
+
+.article-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.article-paragraph{
+  width: 50rem;
+}
