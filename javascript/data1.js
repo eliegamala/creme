@@ -1,58 +1,42 @@
-//save the data
-
 const blogArticles = [
   {
     image: 'images/popularitem1.jpg',
     title: 'delicious',
     description: 'lorem ipsum doreat do reme fas si',
     articleLink: '../blog/article1.html'
-
   },
   {
     image: 'images/popularitem2.jpg',
     title: 'orange cake',
     description: 'lorem ipsum doreat do reme fas si',
     articleLink: '../blog/vanillaCake.html'
-
   },
-
   {
     image: 'images/popularitem4.jpg',
-    title: 'chocalate icecream',
+    title: 'chocolate icecream',
     description: 'lorem ipsum doreat do reme fas si',
     articleLink: '../blog/chocolateicecrem.html'
-
-  },
-  
+  }
 ];
-
 
 let articlesHTML = "";
 
-blogArticles.forEach((articles) =>{
-
+blogArticles.forEach((article) => {
   articlesHTML += `
   <div class="popular-items">
           <div class="popular-image">
-            <img src="${articles.image}" alt="">
+            <img src="${article.image}" alt="">
           </div>
-
           <div class="item-info">
-
-            <h2 class="title">${articles.title}</h2>
-
-            <h2 class="description">${articles.description}</h2>
-  
-            <a href="${articles.articleLink}" target="_blank">Read more  <i class='bx bx-right-arrow-alt'></i></a>
-
+            <h2 class="title">${article.title}</h2>
+            <h2 class="description">${article.description}</h2>
+            <a href="${article.articleLink}" target="_blank">Read more  <i class='bx bx-right-arrow-alt'></i></a>
           </div>
         </div>
-  `
-
+  `;
 });
 
 document.querySelector('.js-popular-items-container').innerHTML = articlesHTML;
-
 
 const latestBlogArticles = [
   {
@@ -77,152 +61,136 @@ const latestBlogArticles = [
 
 let latestblogHTML = "";
 
-blogArticles.forEach((articles) =>{
-
+latestBlogArticles.forEach((article) => {
   latestblogHTML += `
   <div class="popular-items">
           <div class="popular-image">
-            <img src="${articles.image}" alt="">
+            <img src="${article.image}" alt="">
           </div>
-
           <div class="item-info">
-
-            <h2 class="title">${articles.title}</h2>
-
-            <h2 class="description">${articles.description}</h2>
-  
-            <a href="${articles.articleLink}" target="_blank">Read more  <i class='bx bx-right-arrow-alt'></i></a>
-
+            <h2 class="title">${article.title}</h2>
+            <h2 class="description">${article.description}</h2>
+            <a href="${article.articleLink}" target="_blank">Read more  <i class='bx bx-right-arrow-alt'></i></a>
           </div>
         </div>
-  `
-
+  `;
 });
 
 document.querySelector('.latest-blog .js-popular-items-container').innerHTML = latestblogHTML;
 
-
-//special menu p
-const specialProducts = [{
-  image: 'images/specialfood1.jpg',
-  itemName: 'cherry cake',
-  itemDescription: 'lorem ipsun dokar sit',
-  priceCents: 43,
-},
-
-{
-  image: 'images/specialfood2.jpg',
-  itemName: 'strawberry cake',
-  itemDescription: 'heaven on eart ipsum cherry',
-  priceCents: 54,
-},
-{
-  image: 'images/speicalfood3.jpg',
-  itemName: 'vanila cake',
-  itemDescription: 'lorem ipsun dokar sit ipsimslo',
-  priceCents: 100,
-},
-{
-  image: 'images/specialfood4.jpg',
-  itemName: 'strawberry cupcuke',
-  itemDescription: 'lorem ipsun dokar sit ipsimslo',
-  priceCents: 32,
-}
-
+// Special menu products
+const specialProducts = [
+  {
+    image: 'images/specialfood1.jpg',
+    itemName: 'cherry cake',
+    itemDescription: 'lorem ipsun dokar sit',
+    priceCents: 43
+  },
+  {
+    image: 'images/specialfood2.jpg',
+    itemName: 'strawberry cake',
+    itemDescription: 'heaven on eart ipsum cherry',
+    priceCents: 54
+  },
+  {
+    image: 'images/speicalfood3.jpg',
+    itemName: 'vanilla cake',
+    itemDescription: 'lorem ipsun dokar sit ipsimslo',
+    priceCents: 100
+  },
+  {
+    image: 'images/specialfood4.jpg',
+    itemName: 'strawberry cupcake',
+    itemDescription: 'lorem ipsun dokar sit ipsimslo',
+    priceCents: 32
+  }
 ];
 
-
-//breakfast menu
-const breakfastProducts = [{
-  image: 'images/breakfast1.jpg',
-  itemName: 'croissant and cafe',
-  itemDescription: 'lorem ipsun dokar sit',
-  priceCents: 43,
-},
-
-{
-  image: 'images/breakfast2.jpg',
-  itemName: '2 coffees special',
-  itemDescription: 'heaven on eart ipsum cherry',
-  priceCents: 54,
-},
-{
-  image: 'images/breakfast3.jpg',
-  itemName: 'cookie and coffee',
-  itemDescription: 'lorem ipsun dokar sit ipsimslo',
-  priceCents: 100,
-},
-{
-  image: 'images/breakfast4.jpg',
-  itemName: 'slice cake and coffee',
-  itemDescription: 'lorem ipsun dokar sit ipsimslo',
-  priceCents: 32,
-}
-
+// Breakfast menu products
+const breakfastProducts = [
+  {
+    image: 'images/breakfast1.jpg',
+    itemName: 'croissant and cafe',
+    itemDescription: 'lorem ipsun dokar sit',
+    priceCents: 43
+  },
+  {
+    image: 'images/breakfast2.jpg',
+    itemName: '2 coffees special',
+    itemDescription: 'heaven on eart ipsum cherry',
+    priceCents: 54
+  },
+  {
+    image: 'images/breakfast3.jpg',
+    itemName: 'cookie and coffee',
+    itemDescription: 'lorem ipsun dokar sit ipsimslo',
+    priceCents: 100
+  },
+  {
+    image: 'images/breakfast4.jpg',
+    itemName: 'slice cake and coffee',
+    itemDescription: 'lorem ipsun dokar sit ipsimslo',
+    priceCents: 32
+  }
 ];
 
-//dinner menu
-const dinnerProducts = [{
-  image: 'images/dinner1.jpg',
-  itemName: 'lemon cake',
-  itemDescription: 'lorem ipsun dokar sit',
-  priceCents: 43,
-},
-
-{
-  image: 'images/dinner2.jpg',
-  itemName: 'circle cake',
-  itemDescription: 'heaven on eart ipsum cherry',
-  priceCents: 54,
-},
-{
-  image: 'images/dinner3.jpg',
-  itemName: 'strawberry pie cake',
-  itemDescription: 'lorem ipsun dokar sit ipsimslo',
-  priceCents: 100,
-},
-{
-  image: 'images/dinner4.jpg',
-  itemName: 'croissant',
-  itemDescription: 'lorem ipsun dokar sit ipsimslo',
-  priceCents: 32,
-}
-
+// Dinner menu products
+const dinnerProducts = [
+  {
+    image: 'images/dinner1.jpg',
+    itemName: 'lemon cake',
+    itemDescription: 'lorem ipsun dokar sit',
+    priceCents: 43
+  },
+  {
+    image: 'images/dinner2.jpg',
+    itemName: 'circle cake',
+    itemDescription: 'heaven on eart ipsum cherry',
+    priceCents: 54
+  },
+  {
+    image: 'images/dinner3.jpg',
+    itemName: 'strawberry pie cake',
+    itemDescription: 'lorem ipsun dokar sit ipsimslo',
+    priceCents: 100
+  },
+  {
+    image: 'images/dinner4.jpg',
+    itemName: 'croissant',
+    itemDescription: 'lorem ipsun dokar sit ipsimslo',
+    priceCents: 32
+  }
 ];
 
-//lunch menu
-
-const lunchProducts = [{
-  image: 'images/lunch1.jpg',
-  itemName: 'waffle and cream',
-  itemDescription: 'lorem ipsun dokar sit',
-  priceCents: 43,
-},
-
-{
-  image: 'images/lunch2.jpg',
-  itemName: 'waffle and fruit',
-  itemDescription: 'heaven on eart ipsum cherry',
-  priceCents: 54,
-},
-{
-  image: 'images/lunch3.jpg',
-  itemName: 'pancake with strawberry',
-  itemDescription: 'lorem ipsun dokar sit ipsimslo',
-  priceCents: 100,
-},
-{
-  image: 'images/lunch4.jpg',
-  itemName: 'bread and berries',
-  itemDescription: 'lorem ipsun dokar sit ipsimslo',
-  priceCents: 32,
-}
-
+// Lunch menu products
+const lunchProducts = [
+  {
+    image: 'images/lunch1.jpg',
+    itemName: 'waffle and cream',
+    itemDescription: 'lorem ipsun dokar sit',
+    priceCents: 43
+  },
+  {
+    image: 'images/lunch2.jpg',
+    itemName: 'waffle and fruit',
+    itemDescription: 'heaven on eart ipsum cherry',
+    priceCents: 54
+  },
+  {
+    image: 'images/lunch3.jpg',
+    itemName: 'pancake with strawberry',
+    itemDescription: 'lorem ipsun dokar sit ipsimslo',
+    priceCents: 100
+  },
+  {
+    image: 'images/lunch4.jpg',
+    itemName: 'bread and berries',
+    itemDescription: 'lorem ipsun dokar sit ipsimslo',
+    priceCents: 32
+  }
 ];
 
-
-
-// JavaScript
+// Function to show menu items
 function showMenu(category) {
   const menuItemsContainer = document.getElementById('menu-items-container');
   let menuItemsHTML = '';
@@ -243,9 +211,8 @@ function showMenu(category) {
           </div>`;
       });
       break;
-
     case 'breakfast':
-      breakfastProducts.forEach((breakfast)=>{
+      breakfastProducts.forEach((breakfast) => {
         menuItemsHTML += `
           <div class="menu-items">
             <div class="menu-image">
@@ -257,31 +224,27 @@ function showMenu(category) {
               <span>R:${breakfast.priceCents}</span>
             </div>
           </div>`;
-
       });
       break;
-
     case 'lunch':
-    lunchProducts.forEach((lunch)=>{
-      menuItemsHTML += `
-      <div class="menu-items">
-          <div class="menu-image">
-            <img src="${lunch.image}">
-          </div>
-          <div class="menu-info">
-            <h2>${lunch.itemName}</h2>
-            <p>${lunch.itemDescription}</p>
-            <span>R:${lunch.priceCents}</span>
-          </div>
-        </div>`
-      
-    });
-      break;
-
-    case 'dinner':
-      dinnerProducts.forEach((dinner)=>{
+      lunchProducts.forEach((lunch) => {
         menuItemsHTML += `
-        <div class="menu-items">
+          <div class="menu-items">
+            <div class="menu-image">
+              <img src="${lunch.image}">
+            </div>
+            <div class="menu-info">
+              <h2>${lunch.itemName}</h2>
+              <p>${lunch.itemDescription}</p>
+              <span>R:${lunch.priceCents}</span>
+            </div>
+          </div>`;
+      });
+      break;
+    case 'dinner':
+      dinnerProducts.forEach((dinner) => {
+        menuItemsHTML += `
+          <div class="menu-items">
             <div class="menu-image">
               <img src="${dinner.image}">
             </div>
@@ -290,17 +253,14 @@ function showMenu(category) {
               <p>${dinner.itemDescription}</p>
               <span>R:${dinner.priceCents}</span>
             </div>
-          </div>`
-        
+          </div>`;
       });
       break;
-
     default:
-      
-
       return;
   }
-//pushing the menus to html
+
+  //pushing it to html
   menuItemsContainer.innerHTML = menuItemsHTML;
 
   // Remove active class from links
@@ -313,4 +273,5 @@ function showMenu(category) {
     activeLink.classList.add('active');
   }
 }
+
 
