@@ -429,17 +429,85 @@ margin: 1rem 2rem;
   background-color: #e0924e; 
 }
 
-footer{
+@media (max-width: 600px) {
+
+  .contact-section form {
+    margin: 0 0.5rem;
+  }
+}
+
+footer {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   background-color: #f8f8f8;
+  color: black;
+  padding: 2rem;
+  gap: 2rem;
+  text-align: left;
   margin-top: 2rem;
 }
 
-footer div{
+footer div {
   display: flex;
   flex-direction: column;
-  margin: 0 4rem;
-  padding: 2rem;
+  margin: 0;
+  padding: 1rem;
+}
 
+footer h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+footer p, footer a, footer address {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #bfbfbf;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+
+footer .newsletter input {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+footer .newsletter input::placeholder {
+  color: #bfbfbf;
+}
+
+footer .newsletter input:focus {
+  outline: none;
+}
+
+footer .newsletter button {
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  background-color: #e0924e;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer .newsletter button:hover {
+  background-color: #d48445;
+}
+
+@media (max-width: 768px) {
+  footer {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  footer div {
+    margin: 0 auto;
+    padding: 1rem 0;
+  }
 }
