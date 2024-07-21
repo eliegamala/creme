@@ -20,6 +20,7 @@ const blogArticles = [
   }
 ];
 
+
 //data for the latest blog articles
 const latestBlogArticles = [
   {

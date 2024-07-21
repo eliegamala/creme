@@ -39,6 +39,7 @@ latestBlogArticles.forEach((article) => {
 
 document.querySelector('.latest-blog .js-popular-items-container').innerHTML = latestblogHTML;
 
+
 //so that it always display as defualt
 showMenu('special');
 
@@ -126,5 +127,4 @@ function showMenu(category) {
     activeLink.classList.add('active');
   }
 }
-
 

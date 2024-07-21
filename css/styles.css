@@ -105,14 +105,14 @@ body {
 }
 
 
-.popular-items-container{
+.popular-items-container, .chefs-items-container{
   display: flex;
   justify-content: space-between;
   align-items: center;
   
 }
 
-.popular-items{
+.popular-items,.chefs-items{
   border: 1px solid #A9A9A9  ;
   border-radius: 1rem;
   width: 23rem;
@@ -120,10 +120,10 @@ body {
   border-top-left-radius: 8rem;
 }
 
-.popular-items:hover{
+.popular-items:hover,.chefs-items:hover{
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
-.popular-image{
+.popular-image,.chefs-image{
   object-fit: contain;
   overflow: hidden;
 }
@@ -134,7 +134,7 @@ body {
   border-top-right-radius: 1rem;
 }
 
-.popular-items .item-info{
+.popular-items .item-info,.chefs-info{
   margin-left: 2rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -150,6 +150,7 @@ body {
 .popular-items .item-info h2{
   margin-bottom: 1rem;
 }
+
 
 @media(max-width: 900px) {
   .popular-items-container {
@@ -511,3 +512,40 @@ footer .newsletter button:hover {
     padding: 1rem 0;
   }
 }
+
+.title-container{
+  position: relative;
+
+  max-width: 100%;
+  background-image: url("../images/background1.jpg");
+  height: 20rem;
+  margin-top: 6rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 1;
+  
+}
+
+.title-container .overlay{
+  position: absolute;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.title-container h2{
+  z-index: 1000;
+  color: white;
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+

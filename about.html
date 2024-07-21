@@ -27,55 +27,27 @@
       </label>
 
       <ul>
-          <li><a href="#" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
+          <li><a href="index.html" >Home</a></li>
+          <li><a href="#" class="active">About</a></li>
           <li><a href="#">Menu</a></li>
           <li><a href="#">Blog</a></li>
           <li><a href="#">Contact</a></li>
 
       </ul>
      </nav>
-    <!--header section ends-->
 
-
-    <!--hero-section-->
-     <section class="hero-section">
-
-      <div class="hero-text">
-
-        <h2>A Taste of Paradise</h2>
-        <h1>Experience the sublime pleasure of our exquisite desserts.</h1>
-        <p>
-          Together crafting heavenly delights upon each bite, delighting the senses. Explore our decadent creations, where every treat is a masterpiece of flavor and joy.
-        </p>
-        <button>Menu</button>
-
-      </div>
-
-      <div class="hero-image">
-        <img src="images/hero-image.jpg">
-      </div>
-
+     <!--header section ends-->
+     <section class="title-container">
+       <div class="overlay">
+        <h2>About Us</h2>
+       </div>
      </section>
-    <!--hero-section ends-->
 
-    <!--popular dishes section-->
+     <!--about hero section starts -->
 
-    <section class="popular-dishes">
+     <!--our history section-->
 
-      <div class="popular-heading">
-        <p>Popular Desserts</p>
-        <h2>Our Exclusive Item</h2>
-      </div>
-
-      <div class="popular-items-container js-popular-items-container">
-      </div>
-    </section>
-
-
-    <!--our history section-->
-
-    <section class="our-history">
+     <section class="our-history">
       <div class="history-image">
           <img src="images/ourHistory.png" alt="pancake">
       </div>
@@ -91,59 +63,55 @@
 
       </div>
     </section>
+     <!--our history section ends-->
 
-        <!--our history section ends-->
+    <!--our chefs sections-->
 
-
-      <!--menu-secion-->
-
-      <section class="menu" id="menu-section">
-        <div class="menu-row-one">
-          <div class="popular-heading">
-            <p>Popular Menu</p>
-            <h2>Delicious Menu</h2>
-          </div>
-      
-          <ul>
-            <li><a  class="active" onclick="showMenu('special')">Special</a></li>
-            <li><a  onclick="showMenu('breakfast')">Breakfast</a></li>
-            <li><a  onclick="showMenu('lunch')">Lunch</a></li>
-            <li><a  onclick="showMenu('dinner')">Dinner</a></li>
-          </ul>
-        </div>
-      
-        <!--menu appears here-->
-        <div class="menu-items-container" id="menu-items-container">
-        </div>
-      </section>
-
-
-
-<!--contact section-->
-      <div class="contact-section">
-        <h2>Contact Us</h2>
-        <form action="">
-            <div class="input-group">
-                <input type="text" name="name" placeholder="Name">
-                <input type="email" name="email" placeholder="Email">
-            </div>
-            <textarea placeholder="Send a message"></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </div>
-    <!--contact section-->
-
-    
-    <section class="latest-blog">
-
+    <section class="popular-dishes">
       <div class="popular-heading">
-        <p>Recent news</p>
-        <h2>Latest blogs</h2>
+        <p>Team Members</p>
+        <h2>Our Chefs</h2>
       </div>
 
-      <div class="popular-items-container js-popular-items-container">
+      <div class="popular-items-container ">
+     
+        <div class="popular-items">
+          <div class="popular-image">
+            <img src="images/about-us1.jpg" alt="head chef">
+          </div>
+          <div class="item-info">
+            <h2 class="title">james crook</h2>
+            <h2 class="description">Head Chef</h2>
+          </div>
+        </div>
+
+        <div class="popular-items">
+          <div class="popular-image">
+            <img src="images/chef2.jpg" alt="susan chef">
+          </div>
+          <div class="item-info">
+            <h2 class="title">susan wembley</h2>
+            <h2 class="description">Chef master</h2>
+          </div>
+        </div>
+
+        <div class="popular-items">
+          <div class="popular-image">
+            <img src="images/chef5.jpg" alt="susan chef">
+          </div>
+          <div class="item-info">
+            <h2 class="title">james suwang</h2>
+            <h2 class="description">Chef master</h2>
+          </div>
+        </div>
       </div>
+     
     </section>
+    
+
+    <!--our chefs sectons ends-->
+
+
 
     <footer>
 
@@ -183,8 +151,12 @@
 
 
     
+ 
+
+
+
     <script src="data/data.js" async defer></script>
 
-    <script src="javascript/main.js" async defer></script>
-  </body>
-</html>
+    <script src="../javascript/main.js" async defer></script>
+    </body>
+    </html>
