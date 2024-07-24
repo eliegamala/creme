@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Blog</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!--header section-->
+    <nav class="header">
+      <label class="logo">Creme</label>
+      <input type="checkbox" class="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class='bx bx-menu'></i>
+      </label>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../menu.html">Menu</a></li>
+        <li><a href="#" class="active">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <!--header section ends-->
+
+  
+
+    <section class="title-container" style="background-image: url('../images/background3.jpg');">
+      <div class="overlay">
+        <h2>Blog</h2>
+      </div>
+    </section>
+    <section class="blog_container">
+      <div class="left_blog_container js-left-blog-container"></div>
+      <div class="right_blog_container"></div>
+    </section>
+    <footer>
+      <div class="about-us">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi enim eveniet ad porro, obcaecati mollitia.</p>
+      </div>
+      <div class="important-links">
+        <h2>Important Links</h2>
+        <a href="#">Lorem Ipsum</a>
+        <a href="#">Blorem Ipsum</a>
+        <a href="#">Florem Ipsum</a>
+        <a href="#">Dllorem Ipsum</a>
+      </div>
+      <div class="contact-us">
+        <h2>Contact Us</h2>
+        <address>Egghead</address>
+        <p>021 256 854</p>
+        <address>egghead@gmail.com</address>
+      </div>
+      <div class="newsletter">
+        <h2>Newsletter</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <div class="newsletter-input">
+          <input type="text" placeholder="Enter your email">
+          <button type="submit">Subscribe</button>
+        </div>
+      </div>
+    </footer>
+    <script src="../data/data.js" async defer></script>
+    <script src="../javascript/main.js" async defer></script>
+    <script>
+      window.onload = function(){
+        if (document.querySelector('.js-left-blog-container')) {
+          document.querySelector('.js-left-blog-container').innerHTML = blogHTML;
+        }
+      };
+    </script>
+  </body>
+</html>

@@ -20,6 +20,35 @@ const blogArticles = [
   }
 ];
 
+const blogPosts = [
+  
+  {
+  image: '../images/popularitem1.jpg',
+  date: '8 Jan',
+  postName: 'delicious desert',
+  articleLink: '../blog/article1.html',
+
+  blogSnippet: 'lorem ipsum ninaj are summnoning justu',
+  category: 'desert'
+},
+{
+  image: '../images/popularitem2.jpg',
+  date: '9 Jan',
+  postName: 'delicious desert',
+  articleLink: '../blog/vanillaCake.html',
+  blogSnippet: 'lorem ipsum ninaj are summnoning justu',
+  category: 'desert'
+},
+{
+  image: '../images/popularitem4.jpg',
+  date: '10 Jan',
+  postName: 'delicious desert',
+  articleLink: '../blog/vanillaCake.html',
+  blogSnippet: 'lorem ipsum ninaj are summnoning justu',
+  category: 'desert'
+}
+];
+
 
 //data for the latest blog articles
 const latestBlogArticles = [
@@ -42,6 +71,8 @@ const latestBlogArticles = [
     articleLink: '../blog/chocolateicecrem.html'
   }
 ];
+
+
 
 
 

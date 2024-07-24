@@ -16,8 +16,9 @@ blogArticles.forEach((article) => {
   `;
 });
 
-document.querySelector('.js-popular-items-container').innerHTML = articlesHTML;
-
+if (document.querySelector('.popular-dishes .js-popular-items-container')) {
+  document.querySelector('.popular-dishes .js-popular-items-container').innerHTML = articlesHTML;
+}
 
 //pushes the latest blog articles to html
 let latestblogHTML = "";
@@ -37,12 +38,36 @@ latestBlogArticles.forEach((article) => {
   `;
 });
 
-document.querySelector('.latest-blog .js-popular-items-container').innerHTML = latestblogHTML;
+if (document.querySelector('.latest-blog .js-popular-items-container')) {
+  document.querySelector('.latest-blog .js-popular-items-container').innerHTML = latestblogHTML;
+}
 
+//blog posts articles 
 
-//so that it always display as defualt
-showMenu('special');
+// Displaying blog posts in the left_blog_container
+let blogHTML = '';
 
+blogPosts.forEach((blogs) => {
+  blogHTML += `
+    <div class="blogPost">
+      <div class="blog-image">
+        <img src="${blogs.image}" alt="">
+      </div>
+      <div class="date">
+        <p>${blogs.date}</p>
+      </div>
+      <div class="blog-info">
+        <a href="${blogs.articleLink}">${blogs.postName}</a>
+        <p>${blogs.blogSnippet}</p>
+        <p>${blogs.category}</p>
+      </div>
+    </div>
+  `;
+});
+
+if (document.querySelector('.js-blog-container')) {
+  document.querySelector('.js-blog-container').innerHTML = blogHTML;
+}
 
 // Function to show menu items
 function showMenu(category) {
@@ -55,7 +80,7 @@ function showMenu(category) {
         menuItemsHTML += `
           <div class="menu-items">
             <div class="menu-image">
-              <img src="${special.image}">
+              <img src="${special.image}" alt="${special.itemName}">
             </div>
             <div class="menu-info">
               <h2>${special.itemName}</h2>
@@ -70,7 +95,7 @@ function showMenu(category) {
         menuItemsHTML += `
           <div class="menu-items">
             <div class="menu-image">
-              <img src="${breakfast.image}">
+              <img src="${breakfast.image}" alt="${breakfast.itemName}">
             </div>
             <div class="menu-info">
               <h2>${breakfast.itemName}</h2>
@@ -85,7 +110,7 @@ function showMenu(category) {
         menuItemsHTML += `
           <div class="menu-items">
             <div class="menu-image">
-              <img src="${lunch.image}">
+              <img src="${lunch.image}" alt="${lunch.itemName}">
             </div>
             <div class="menu-info">
               <h2>${lunch.itemName}</h2>
@@ -100,7 +125,7 @@ function showMenu(category) {
         menuItemsHTML += `
           <div class="menu-items">
             <div class="menu-image">
-              <img src="${dinner.image}">
+              <img src="${dinner.image}" alt="${dinner.itemName}">
             </div>
             <div class="menu-info">
               <h2>${dinner.itemName}</h2>
@@ -122,9 +147,8 @@ function showMenu(category) {
   menuLinks.forEach(link => link.classList.remove('active'));
 
   // Add active class to the clicked link
-  const activeLink = document.querySelector(`.menu-row-one ul li a[href="#"][onclick="showMenu('${category}']"]`);
+  const activeLink = document.querySelector(`.menu-row-one ul li a[onclick="showMenu('${category}')"]`);
   if (activeLink) {
     activeLink.classList.add('active');
   }
 }
-

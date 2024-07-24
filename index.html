@@ -1,174 +1,139 @@
 <!DOCTYPE html>
-
 <html>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <title>Home</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/header.css">
-
     <link rel="stylesheet" href="css/styles.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
-
-
   </head>
   <body>
-   
     <!--header section-->
-     <nav class="header">
+    <nav class="header">
       <label class="logo">Creme</label>
-
       <input type="checkbox" class="checkbox" id="check">
       <label for="check" class="checkbtn">
         <i class='bx bx-menu'></i>
       </label>
-
       <ul>
-          <li><a href="#" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact</a></li>
-
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="../blog/blogHome.html">Blog</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
-     </nav>
+    </nav>
     <!--header section ends-->
 
-
     <!--hero-section-->
-     <section class="hero-section">
-
+    <section class="hero-section">
       <div class="hero-text">
-
         <h2>A Taste of Paradise</h2>
         <h1>Experience the sublime pleasure of our exquisite desserts.</h1>
         <p>
           Together crafting heavenly delights upon each bite, delighting the senses. Explore our decadent creations, where every treat is a masterpiece of flavor and joy.
         </p>
         <button>Menu</button>
-
       </div>
-
       <div class="hero-image">
-        <img src="images/hero-image.jpg">
+        <img src="images/hero-image.jpg" alt="Hero Image">
       </div>
-
-     </section>
+    </section>
     <!--hero-section ends-->
 
     <!--popular dishes section-->
-
     <section class="popular-dishes">
-
       <div class="popular-heading">
         <p>Popular Desserts</p>
         <h2>Our Exclusive Item</h2>
       </div>
-
-      <div class="popular-items-container js-popular-items-container">
-      </div>
+      <div class="popular-items-container js-popular-items-container"></div>
     </section>
-
+    <!--popular dishes section ends-->
 
     <!--our history section-->
-
     <section class="our-history">
       <div class="history-image">
-          <img src="images/ourHistory.png" alt="pancake">
+        <img src="images/ourHistory.png" alt="pancake">
       </div>
       <div class="history-text">
-          <p>Our history</p>
-          <h2>Where the Sweetness Matches the Satisfaction.</h2>
-          <h3>Satisfying people hunger for simple pleasures</h3>
-
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt odio temporibus ut,
-             dolores at dolorum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum?</p>
-
-          <a href="#">Read more  <i class='bx bx-right-arrow-alt'></i></a>
-
+        <p>Our history</p>
+        <h2>Where the Sweetness Matches the Satisfaction.</h2>
+        <h3>Satisfying people hunger for simple pleasures</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt odio temporibus ut,
+          dolores at dolorum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum?</p>
+        <a href="#">Read more  <i class='bx bx-right-arrow-alt'></i></a>
       </div>
     </section>
+    <!--our history section ends-->
 
-        <!--our history section ends-->
-
-
-      <!--menu-secion-->
-
-      <section class="menu" id="menu-section">
-        <div class="menu-row-one">
-          <div class="popular-heading">
-            <p>Popular Menu</p>
-            <h2>Delicious Menu</h2>
-          </div>
-      
-          <ul>
-            <li><a  class="active" onclick="showMenu('special')">Special</a></li>
-            <li><a  onclick="showMenu('breakfast')">Breakfast</a></li>
-            <li><a  onclick="showMenu('lunch')">Lunch</a></li>
-            <li><a  onclick="showMenu('dinner')">Dinner</a></li>
-          </ul>
+    <!--menu section-->
+    <section class="menu" id="menu-section">
+      <div class="menu-row-one">
+        <div class="popular-heading">
+          <p>Popular Menu</p>
+          <h2>Delicious Menu</h2>
         </div>
-      
-        <!--menu appears here-->
-        <div class="menu-items-container" id="menu-items-container">
-        </div>
-      </section>
+        <ul>
+          <li><a class="active" onclick="showMenu('special')">Special</a></li>
+          <li><a onclick="showMenu('breakfast')">Breakfast</a></li>
+          <li><a onclick="showMenu('lunch')">Lunch</a></li>
+          <li><a onclick="showMenu('dinner')">Dinner</a></li>
+        </ul>
+      </div>
+      <!--menu appears here-->
+      <div class="menu-items-container" id="menu-items-container"></div>
+    </section>
+    <!--menu section ends-->
 
-
-
-<!--contact section-->
-      <div class="contact-section">
-        <h2>Contact Us</h2>
-        <form action="">
-            <div class="input-group">
-                <input type="text" name="name" placeholder="Name">
-                <input type="email" name="email" placeholder="Email">
-            </div>
-            <textarea placeholder="Send a message"></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </div>
     <!--contact section-->
+    <div class="contact-section">
+      <h2>Contact Us</h2>
+      <form action="">
+        <div class="input-group">
+          <input type="text" name="name" placeholder="Name">
+          <input type="email" name="email" placeholder="Email">
+        </div>
+        <textarea placeholder="Send a message"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+    <!--contact section ends-->
 
-    
+    <!--latest blog section-->
     <section class="latest-blog">
-
       <div class="popular-heading">
         <p>Recent news</p>
         <h2>Latest blogs</h2>
       </div>
-
-      <div class="popular-items-container js-popular-items-container">
-      </div>
+      <div class="popular-items-container js-popular-items-container"></div>
     </section>
+    <!--latest blog section ends-->
 
+  
+
+    <!--footer-->
     <footer>
-
       <div class="about-us">
         <h2>About Us</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi enim eveniet ad porro, obcaecati mollitia.</p>
       </div>
-
       <div class="important-links">
-        <h2>important links</h2>
-
-        <a href="#">lorem ipsum</a>
-        <a href="#">blorem ipsum</a>
-        <a href="#">florem ipsum</a>
-        <a href="#">dllorem ipsum</a>
+        <h2>Important Links</h2>
+        <a href="#">Lorem ipsum</a>
+        <a href="#">Blorem ipsum</a>
+        <a href="#">Florem ipsum</a>
+        <a href="#">Dllorem ipsum</a>
       </div>
-
-
       <div class="contact-us">
-        <h2>contact us</h2>
-
-        <address>egghead</address>
+        <h2>Contact Us</h2>
+        <address>Egghead</address>
         <p>021 256 854</p>
         <address>egghead@gmail.com</address>
-
       </div>
       <div class="newsletter">
         <h2>Newsletter</h2>
@@ -178,13 +143,15 @@
           <button type="submit">Subscribe</button>
         </div>
       </div>
-
     </footer>
+    <!--footer ends-->
 
-
-    
     <script src="data/data.js" async defer></script>
-
     <script src="javascript/main.js" async defer></script>
+    <script>
+      window.onload = function(){
+        showMenu('special');
+      };
+    </script>
   </body>
 </html>
