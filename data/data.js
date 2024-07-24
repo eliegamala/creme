@@ -10,7 +10,7 @@ const blogArticles = [
     image: 'images/popularitem2.jpg',
     title: 'orange cake',
     description: 'lorem ipsum doreat do reme fas si',
-    articleLink: '../blog/vanillaCake.html'
+    articleLink: '../blog/orangeCake.html'
   },
   {
     image: 'images/popularitem4.jpg',
@@ -35,7 +35,7 @@ const blogPosts = [
   image: '../images/popularitem2.jpg',
   date: '9 Jan',
   postName: 'delicious desert',
-  articleLink: '../blog/vanillaCake.html',
+  articleLink: '../blog/orangeCake.html',
   blogSnippet: 'lorem ipsum ninaj are summnoning justu',
   category: 'desert'
 },
@@ -43,7 +43,7 @@ const blogPosts = [
   image: '../images/popularitem4.jpg',
   date: '10 Jan',
   postName: 'delicious desert',
-  articleLink: '../blog/vanillaCake.html',
+  articleLink: '../blog/chocolateicecrem.html',
   blogSnippet: 'lorem ipsum ninaj are summnoning justu',
   category: 'desert'
 }
@@ -62,7 +62,7 @@ const latestBlogArticles = [
     image: 'images/popularitem2.jpg',
     title: 'Orange Cake',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    articleLink: '../blog/vanillaCake.html'
+    articleLink: '../blog/orangeCake.html'
   },
   {
     image: 'images/popularitem4.jpg',
